@@ -1,6 +1,6 @@
 # Description
 
-This is a simple mockup of a job posting board built using React. It has a filtering function that filters jobs based on a particular tech stack or position.
+This is a simple mockup of a job board page built using React. It has a filtering function that filters jobs based on a particular tech stack or position.
 
 ## Available Scripts
 

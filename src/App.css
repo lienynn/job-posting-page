@@ -29,7 +29,7 @@ body{
   z-index: 2;
   width: 80%;
   background-color: white;
-  box-shadow: 4px 7px 24px -1px rgba(0,0,0,0.45);
+  box-shadow: 4px 7px 24px -1px rgba(0,0,0,0.3);
   top: 10vh;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -69,7 +69,7 @@ i:hover{
 
 header{
   position: relative;
-  background-color:hsl(180, 31%, 95%);
+  background-color:#fbfaff;
   height: 10vh;
   margin-bottom: 5%;
 }
@@ -84,57 +84,127 @@ header{
 
 .post-box{
   position:relative;
-  background-color: hsl(180, 31%, 95%);
+  background-color: #fbfaff;
   box-shadow: 4px 7px 24px -1px rgba(0,0,0,0.45);
   margin: 2% auto;
   width: 80%;
   border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .featured-border{
-  border-left: solid .6rem hsl(180, 29%, 50%);
+  border-left: solid .6rem #758bfd;
 }
 
 .post-box .content-frame{
   display: flex;
+  padding: 20px;
+  width: 100%;
 }
 
-.content-frame .company-logo{
-  width: 10vw;
-  margin: 3% 2%;
-}
-
-.text-frame{
+.post-box .text-frame {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 2% 0 2% 2%;
   width: 40vw;
 }
 
+.post-box .text-frame h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.post-box .text-frame h4 .new-tag {
+  background-color: #5CDB95;
+  color: #FFF;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+
+.post-box .text-frame h4 .featured-tag {
+  background-color: #FCA311;
+  color: #FFF;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.post-box .text-frame h4 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.post-box .text-frame p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.post-box .text-frame p span {
+  margin-right: 5px;
+}
+
+.post-box hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.post-box .skill-frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-box .skill-frame .skill-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-box .skill-frame .skills {
+  background-color: #F0F0F0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+  padding: 5
+}
+
 .text{
   line-height: 2.5;
-
 }
 
 .header-title {
   font-weight: 800;
   font-size: 2rem;
   text-align: center;
-  color: hsl(180, 29%, 50%);
+  color: #758bfd;
 }
 
 .job-title{
   font-weight: 700;
   font-size: 1.2rem;
-  
 }
 
 .job-title:hover{
-  color: hsl(180, 29%, 50%);
+  color: #758bfd;
   cursor: pointer;
 }
 
 .company-name{
-  color: hsl(180, 29%, 50%);
+  color: #758bfd;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -172,7 +242,6 @@ ul{
 .skill-frame ul{
   justify-content: flex-end;
 }
-
 
 a,
 li{

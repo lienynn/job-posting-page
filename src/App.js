@@ -1,5 +1,4 @@
 import React,{Fragment, useState} from 'react';
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Posts from "./components/Posts";
 import jobsdata from "./jobsdata";
@@ -67,8 +66,6 @@ const App = () => {
       {
         searchTerms.length > 0? jobsdata.filter(checkCriteria).map(createPost) : jobsdata.map(createPost)
       }
-
-    <Footer />
   </Fragment>
 
 )};
